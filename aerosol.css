@@ -17,37 +17,34 @@ main {
   padding: 1em;
 }
 
-header,
-a {
+header {
   border-radius: 13% 8%;
+  padding-inline: 3vw;
 }
 
 h1 {
   padding: 3vmin;
 }
 
-header {
-  padding-inline: 3vw;
+mark {
+  border-radius: 13% 8%;
 }
 
-small {
-  display: block;
-  font-size: .618em;
+a {
+  border-radius: 13% 8%;
+  display: inline-block;
+  padding: 1ch;
 }
 
-:not(:hover) {
-  text-decoration-style: dotted;
-}
+samp { padding-inline: 1vw; font-size: 1.236em }
+small { display: block; font-size: 1ch }
+sub { all: unset }
+sup { all: unset; font-size: 1.236em }
+s { text-decoration-style: wavy }
+a:hover { text-decoration-style: double }
+:any-link { text-decoration-style: dotted }
 
-:focus {
-  outline: 1ex groove;
+:focus { 
   text-decoration-style: solid;
-}
-
-:hover {
-  text-decoration-style: double;
-}
-
-:only-child {
-  font-weight: bolder;
+  outline: 1ex groove;
 }
